@@ -53,7 +53,7 @@ const Card = ({ item, frequency }) => {
 
       <div className="bg-neutral-navy-900 rounded-2xl py-[27.5px] px-6 space-y-2 md:space-y-4 lg:space-y-6 z-10">
         <div className="flex items-center justify-between">
-          <span className="font-medium text-lg leading-5.25">{item.title}</span>
+          <h3 className="font-medium text-lg leading-5.25">{item.title}</h3>
           <img src={Ellipsis} alt="Ellipsis" />
         </div>
         <div className="flex items-center justify-between gap-4 md:flex-col md:items-start md:space-y-2">

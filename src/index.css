@@ -21,17 +21,20 @@
 
 @layer base {
   html {
-    font-size: 18px;
+    font-size: 100%;
   }
 
   body {
-    @apply font-primary bg-neutral-navy-950 text-white;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    background-color: var(--color-neutral-navy-950);
+    color: #fff;
   }
 }
 
 @layer components {
   .hour-text {
-    font-size: clamp(32px, 5vw + 1rem, 3.5rem);
+    font-size: clamp(32px, 3vw + 1rem, 3.5rem);
     font-weight: 300;
     line-height: 1.4;
   }
@@ -55,7 +58,7 @@
         "social"
         "selfcare";
 
-      @media (min-width: 768px) {
+      @media (min-width: 48rem) {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-areas: 
           "profile  profile   profile"
@@ -63,7 +66,7 @@
           "exercise social    selfcare";
       }
 
-      @media (min-width: 1024px) {
+      @media (min-width: 64rem) {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-template-areas: 
           "profile  work      play    study"

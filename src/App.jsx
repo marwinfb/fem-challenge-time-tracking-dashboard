@@ -13,6 +13,7 @@ const App = () => {
 
   return (
     <div className="max-w-7xl mx-auto min-h-screen p-6 flex items-center justify-center">
+      <h1 className="sr-only">Time Tracking Dashboard</h1>
       <Dashboard handleClick={handleClick} frequency={frequency} isActive={isActive} data={data} />
     </div>
   );
