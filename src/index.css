@@ -75,6 +75,8 @@
   }
 
   .profile {
+    display: grid;
+    grid-template-rows: 2fr auto;
     grid-area: profile;
   }
 
